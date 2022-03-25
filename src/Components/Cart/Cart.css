@@ -7,3 +7,11 @@
 .cart h3{
     text-align: center;
 }
+.cart-item{
+    display: flex;
+}
+.cart-item button{
+    border: none;
+    color: gray;
+    background-color: white;
+}
