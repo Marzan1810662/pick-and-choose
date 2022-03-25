@@ -13,8 +13,9 @@
     justify-items: center;
 }
 .cart-container{
-    /* background-color: red; */
-    margin-right: 5%;   
+    margin-right: 5%; 
+    border: 1px solid whitesmoke;  
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -33,5 +34,16 @@
     .cart-container{
         width: 86%;
         margin: 10px 0 20px 0;
+    }
+}
+@media screen and (min-width: 567px) and (max-width: 768px){
+    .homepage-container{
+        margin-left:  0;
+        margin-right:  0;
+    }
+    .all-products-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0.5%;
     }
 }

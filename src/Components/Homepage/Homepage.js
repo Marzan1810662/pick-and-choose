@@ -14,7 +14,8 @@ const Homepage = () => {
         <div className='homepage-container'>
             <div className='all-products-container'>
                 {
-                    products.map(product => <Product product={product}></Product>)
+                    products.map(product => <Product key={product.id} 
+                                                     product={product}></Product>)
                 }
             </div>
             <div className='cart-container'>
