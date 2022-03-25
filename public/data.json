@@ -1,0 +1,56 @@
+[
+  {
+    "id": "623df6f650ca22f79f4e202b",
+    "name": "Zenbook Flip S UX371 (11th Gen Intel)",
+    "image": "https://dlcdnwebimgs.asus.com/gain/1758a98e-0528-41ea-90dc-39c7b4d2c346/w800",
+    "price": 77354
+  },
+  {
+    "id": "623df6f6ae5b801e1a74565f",
+    "name": "Zenbook 14 Ultralight UX435",
+    "image": "https://dlcdnwebimgs.asus.com/gain/0a778104-0b77-4315-a651-599944fabe8d/w800",
+    "price": 86887
+  },
+  {
+    "id": "623df6f6e5f82a63d242a3b8",
+    "name": "Zenbook 13 OLED (UX325, 11th Gen Intel®)",
+    "image": "https://dlcdnwebimgs.asus.com/gain/2f5b0c11-ffdd-4e85-b26d-5c675b719511/w800",
+    "price": 193345
+  },
+  {
+    "id": "623df6f699377d53b549c024",
+    "name": "ASUS E410 Blue",
+    "image": "https://dlcdnwebimgs.asus.com/gain/881d61d8-f5c3-4df0-bf41-d925e3a7ebad/w800",
+    "price": 127074
+  },
+  {
+    "id": "623df6f6be5f64deb598f71f",
+    "name": "ASUS E410 Pink",
+    "image": "https://dlcdnwebimgs.asus.com/gain/a1bf2f97-be2a-456c-bedc-f68ec4815ae5/w800",
+    "price": 104095
+  },
+  {
+    "id": "623df6f68d6d1f6f18646ecc",
+    "name": "Vivobook S14 S433 Red",
+    "image": "https://dlcdnwebimgs.asus.com/gain/6bd30017-2ad6-457e-9f6d-12e05b65cec8/w800",
+    "price": 141838
+  },
+  {
+    "id": "623df6f651abb24b0606021b",
+    "name": "Vivobook S14 S433 White",
+    "image": "https://dlcdnwebimgs.asus.com/gain/6c14fd6f-5fbf-4746-a695-b4adf7ad6839/w800",
+    "price": 72195
+  },
+  {
+    "id": "623df6f682b440f154c69839",
+    "name": "Vivobook 15 M513 Purple",
+    "image": "https://dlcdnwebimgs.asus.com/gain/053b2384-50e6-4f35-8fc6-0a600c88efcb/w800",
+    "price": 189007
+  },
+  {
+    "id": "623df6f6bb8b4b4d8c5a35da",
+    "name": "Vivobook 15 M513 Transparent Silver",
+    "image": "https://dlcdnwebimgs.asus.com/gain/9a0109e3-d58d-4c2f-91ba-f0566733c052/w800",
+    "price": 154845
+  }
+]
