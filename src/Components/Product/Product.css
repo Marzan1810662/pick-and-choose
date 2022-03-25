@@ -1,0 +1,15 @@
+.product{
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 10px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.product img{
+    width: 100%;
+}
+.product h4{
+    padding-left: 5%;
+}
+.product p{
+    padding-left: 5%;
+}

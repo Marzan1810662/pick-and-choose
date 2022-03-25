@@ -42,6 +42,12 @@
     "price": 72195
   },
   {
+    "id": "623e139a20266f86a1790001",
+    "name": "Vivobook S14 S433 Green",
+    "image": "https://dlcdnwebimgs.asus.com/gain/9186bf2f-fedf-4007-9520-11be29862f23/w800",
+    "price": 154845
+  },
+  {
     "id": "623df6f682b440f154c69839",
     "name": "Vivobook 15 M513 Purple",
     "image": "https://dlcdnwebimgs.asus.com/gain/053b2384-50e6-4f35-8fc6-0a600c88efcb/w800",
@@ -51,6 +57,18 @@
     "id": "623df6f6bb8b4b4d8c5a35da",
     "name": "Vivobook 15 M513 Transparent Silver",
     "image": "https://dlcdnwebimgs.asus.com/gain/9a0109e3-d58d-4c2f-91ba-f0566733c052/w800",
+    "price": 154845
+  },
+  {
+    "id": "623e139a2c5a0cccb8986b8a",
+    "name": "Vivobook Pro 16X OLED (M7600, AMD Ryzen 5000 Series)",
+    "image": "https://dlcdnwebimgs.asus.com/gain/f7aac1c2-2737-4f99-9f7b-ea0b845cdfed/w800",
+    "price": 154845
+  },
+  {
+    "id": "623e139aa630fdc8f7f80609",
+    "name": "Vivobook Pro 15 OLED (K3500, 11th Gen Intel)",
+    "image": "https://dlcdnwebimgs.asus.com/gain/7be9e760-d15c-45e1-bfb0-bbbc4d775969/w800",
     "price": 154845
   }
 ]
