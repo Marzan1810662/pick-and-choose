@@ -10,6 +10,7 @@ const Product = ({product, handleSelectProduct}) => {
             <img src={image} alt="" />
             <h4>{name}</h4>
             <p>Price: {price}BDT</p>
+            <br />
             <button onClick={() => handleSelectProduct(product)}>Select <FontAwesomeIcon icon={faCartArrowDown}></FontAwesomeIcon></button>
         </div>
     );

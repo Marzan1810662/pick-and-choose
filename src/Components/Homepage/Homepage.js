@@ -46,14 +46,15 @@ const Homepage = () => {
             }
         }
         setCart(selectedProducts);
+        setMessage('');
     }
     //select 1 product randomly from cart
     const handleChooseOne = () => {
-        console.log('Items in cart', cart.length);
+        // console.log('Items in cart', cart.length);
         if (cart.length > 0) {
             const index = Math.floor(Math.random() * cart.length);
-            console.log("Random Number", index);
-            console.log(cart[index]);
+            // console.log("Random Number", index);
+            // console.log(cart[index]);
             setCart([cart[index]]);
             setMessage('The one picked for you is ')
         }
