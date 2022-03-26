@@ -21,33 +21,37 @@ const Homepage = () => {
             selectedProducts.push(selectedProduct);
         }
         else {
-                if (cart.length === 4) {
+            if (cart.length === 4) {
+                swal({
+                    text: "Sorry! Can not add more than 4 products",
+                    icon: "error",
+                    button: "OK",
+                });
+                selectedProducts = [...cart];
+            }
+            else {
+                const exists = cart.find(product => product.id === selectedProduct.id);
+                // console.log(exists);
+                if (exists) {
                     swal({
-                        text: "Sorry! Can not add more than 4 products",
+                        text: "Product already added to cart",
                         icon: "error",
                         button: "OK",
                     });
                     selectedProducts = [...cart];
                 }
                 else {
-                    const exists = cart.find(product => product.id === selectedProduct.id);
-                    console.log(exists);
-                    if (exists) {
-                        swal({
-                            text: "Product already added to cart",
-                            icon: "error",
-                            button: "OK",
-                        });
-                        selectedProducts = [...cart];
-                    }
-                    else{
-                        selectedProducts = [...cart, selectedProduct]
-                    }
-                    
+                    selectedProducts = [...cart, selectedProduct]
                 }
+
+            }
         }
         // console.log(cart);
         setCart(selectedProducts);
+    }
+    const handleChooseAgain = () => {
+        console.log('Choose again button clicked');
+        setCart([]);
     }
     return (
         <div className='homepage-container'>
@@ -59,7 +63,7 @@ const Homepage = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} handleChooseAgain={handleChooseAgain} ></Cart>
             </div>
         </div>
     );
