@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import swal from 'sweetalert';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Homepage.css'
@@ -14,12 +15,20 @@ const Homepage = () => {
 
     const handleSelectProduct = (selectedProduct) => {
         console.log('handle select product clicked with id', selectedProduct.id);
-        let selectedProducts =[];
-        if(cart.length === 0){
+        let selectedProducts = [];
+        if (cart.length === 0) {
             selectedProducts.push(selectedProduct);
         }
-        else{
-            selectedProducts = [...cart, selectedProduct]
+        else {
+            if(cart.length === 4){
+                swal({
+                    text: "Sorry! Can not add more than 4 products",
+                    icon: "error",
+                    button: "OK",
+                  });
+            }
+            else{
+                selectedProducts = [...cart, selectedProduct]}
         }
         // console.log(cart);
         setCart(selectedProducts);
