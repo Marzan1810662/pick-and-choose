@@ -7,6 +7,10 @@
 .cart h3{
     text-align: center;
 }
+.cart h4{
+    text-align: center;
+    color: orange;
+}
 
 .choose-one-btn{
  width: 80%;
