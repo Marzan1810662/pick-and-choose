@@ -26,6 +26,7 @@ const Homepage = () => {
                     icon: "error",
                     button: "OK",
                   });
+                  selectedProducts = [...cart];
             }
             else{
                 selectedProducts = [...cart, selectedProduct]}
