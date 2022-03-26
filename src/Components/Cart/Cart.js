@@ -18,8 +18,8 @@ const Cart = ({ cart }) => {
                 //     </div>
                 // })
             }
-            <button>Choose One</button>
-            <button>Choose Again</button>
+            <button className='choose-one-btn'>Choose One</button>
+            <button className='choose-again-btn'>Choose Again</button>
 
         </div>
     );

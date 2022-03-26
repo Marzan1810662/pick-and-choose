@@ -15,3 +15,13 @@
     color: gray;
     background-color: white;
 }
+.choose-one-btn{
+ width: 80%;
+ margin: 10px 20px;
+}
+
+.choose-again-btn{
+    width: 80%;
+    margin: 10px 0;
+    margin: 10px 20px;
+}
