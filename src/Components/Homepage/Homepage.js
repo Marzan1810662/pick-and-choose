@@ -21,7 +21,7 @@ const Homepage = () => {
         else{
             selectedProducts = [...cart, selectedProduct]
         }
-        console.log(cart);
+        // console.log(cart);
         setCart(selectedProducts);
     }
     return (
