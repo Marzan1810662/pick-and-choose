@@ -4,6 +4,7 @@
     padding-bottom: 30px;
     margin-left:  150px;
     margin-right:  150px;
+    margin-bottom: 30px;
 }
 .all-products-container{
     display: grid;
@@ -29,7 +30,7 @@
     .all-products-container{
         display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 0.5%;
+    grid-row-gap: 0;
     }
     .cart-container{
         width: 86%;
@@ -42,8 +43,8 @@
         margin-right:  0;
     }
     .all-products-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 0.5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0;
     }
 }

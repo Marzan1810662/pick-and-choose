@@ -3,7 +3,7 @@
     justify-content: space-between;
     margin-left:  150px;
     margin-right:  150px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .q1-container{
@@ -33,4 +33,7 @@
         margin: 0 10px;
         padding: 0 5px;
     }
+}
+@media screen and (min-width: 567px) and (max-width: 768px){
+
 }
