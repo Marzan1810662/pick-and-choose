@@ -13,7 +13,7 @@ const Homepage = () => {
             .then(response => response.json())
             .then(data => setProducts(data));
     }, []);
-
+    //add product to cart
     const handleSelectProduct = (selectedProduct) => {
         let selectedProducts = [];
 
@@ -48,6 +48,13 @@ const Homepage = () => {
         setCart(selectedProducts);
         setMessage('');
     }
+    const handleDeleteFromCart = (selectedProduct) => {
+        //console.log('delete from cart clicked');
+        const restProducts = cart.filter( product => product.id !== selectedProduct.id );
+        //console.log(restProducts);
+        setCart(restProducts);
+        setMessage('');
+    }
     //select 1 product randomly from cart
     const handleChooseOne = () => {
         // console.log('Items in cart', cart.length);
@@ -58,7 +65,7 @@ const Homepage = () => {
             setCart([cart[index]]);
             setMessage('The one picked for you is ')
         }
-        else{
+        else {
             swal({
                 text: "Please select products first.",
                 icon: "error",
@@ -81,7 +88,10 @@ const Homepage = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart} message={message} handleChooseAgain={handleChooseAgain} handleChooseOne={handleChooseOne} ></Cart>
+                <Cart cart={cart} message={message}
+                handleDeleteFromCart={handleDeleteFromCart} 
+                handleChooseAgain={handleChooseAgain} 
+                handleChooseOne={handleChooseOne} ></Cart>
             </div>
         </div>
     );
