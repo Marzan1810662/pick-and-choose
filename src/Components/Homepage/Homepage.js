@@ -14,22 +14,37 @@ const Homepage = () => {
     }, []);
 
     const handleSelectProduct = (selectedProduct) => {
-        console.log('handle select product clicked with id', selectedProduct.id);
+        // console.log('handle select product clicked with id', selectedProduct.id);
         let selectedProducts = [];
+
         if (cart.length === 0) {
             selectedProducts.push(selectedProduct);
         }
         else {
-            if(cart.length === 4){
-                swal({
-                    text: "Sorry! Can not add more than 4 products",
-                    icon: "error",
-                    button: "OK",
-                  });
-                  selectedProducts = [...cart];
-            }
-            else{
-                selectedProducts = [...cart, selectedProduct]}
+                if (cart.length === 4) {
+                    swal({
+                        text: "Sorry! Can not add more than 4 products",
+                        icon: "error",
+                        button: "OK",
+                    });
+                    selectedProducts = [...cart];
+                }
+                else {
+                    const exists = cart.find(product => product.id === selectedProduct.id);
+                    console.log(exists);
+                    if (exists) {
+                        swal({
+                            text: "Product already added to cart",
+                            icon: "error",
+                            button: "OK",
+                        });
+                        selectedProducts = [...cart];
+                    }
+                    else{
+                        selectedProducts = [...cart, selectedProduct]
+                    }
+                    
+                }
         }
         // console.log(cart);
         setCart(selectedProducts);
